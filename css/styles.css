@@ -14,6 +14,23 @@ body {
     background-color: var(--bg);
 }
 
+
+.container {
+    /*Criar um container ajuda na hora de manutenção porque voce pode dar 
+    caracteristicas que vao se seguir em diversar partes do projeto*/
+    height: 100vh;
+
+}
+
+.principal {
+    /* Quando uma imagem não for importante para a experiencia do usuario coloca-la no css*/
+    background-image: url("../img/Background.png");
+    /*Seguindo as especificaçoes do cliente o bakground precisa ficar contido na secao, 
+    por isso as caracteristicas abaixo se fazem nessesarias*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .titulo__principal {
     color: var(--destaque);
 }
