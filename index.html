@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Alura Plus</title>
 </head>
 <body>
     <!--Quando criado a pagina devemos separar o conteudo em seçoes para que o codigo fique mais legivel 
         e que seja possivel trabalhar melhor no css-->
     <section class="container principal">
-    <h1 class="titulo__principal">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
-    <!--Quando uma imagem for importante para a experiencia do usario, coloca-la no html-->
-    <img src="img/Combo.png" alt="Combo inclui Alura+ e alura lingua"> 
+        <!--No css eu preciso de um grid para poder organizar os elementos, o grid se aplica apenas 
+            ao filho direto do elemento selecionado, por causa disto precisei colocar uma div que 
+            englobe os elementos que eu quero que façam parte do grid-->
+        <div>
+            <h1 class="principal__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+            <!--Quando uma imagem for importante para a experiencia do usario, coloca-la no html-->
+            <img src="img/Combo.png" alt="Combo inclui Alura+ e alura lingua"> 
+            <!--O elemento a abaixo vai se parecer um botão na pagina web, mas ele não é feito usando o elemento button, 
+                porque ele não serve uma função na nossa pagina, é apenas estico, entao fazemos no css-->
+            <a href="www.alura.com.br" class="principal__botao">Assine por 12x de R$ 120,00*</a>
+            <a href="www.alura.com.br" class="principal__botao principal__botao-secundario">Assinar somente o Alura+</a>
+            <p class="principal__texto">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+        </div>
     </section>
 </body>
 </html>

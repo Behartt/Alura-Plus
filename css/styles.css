@@ -3,6 +3,7 @@
     --secundario: #C0C0C0;
     --botao: #167BF7;
     --bg: #00030C;
+    --inter: "inter"
 }
 
 * {
@@ -12,6 +13,8 @@
 
 body {
     background-color: var(--bg);
+    font-family: var(--inter);
+    font-weight: 400;
 }
 
 
@@ -19,6 +22,8 @@ body {
     /*Criar um container ajuda na hora de manutenção porque voce pode dar 
     caracteristicas que vao se seguir em diversar partes do projeto*/
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 
 }
 
@@ -31,6 +36,29 @@ body {
     background-size: contain;
 }
 
-.titulo__principal {
+.principal__titulo {
     color: var(--destaque);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.principal__botao {
+    /*O objetivo aqui é deixar que nosso elemento a do html, fique identico a um botao, 
+    por isso, padding, diplay, radius se fazem necessarios*/
+    background-color: var(--botao);
+    color: var(--destaque);
+    border-radius: 8px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+.principal__botao-secundario {
+    background-color: transparent;
+    border: 1px solid var(--destaque);
+}
+
+.principal__texto {
+    color: var(--secundario);
+    font-size: 12px;
 }
