@@ -159,3 +159,7 @@ as class se tornam relevantes para isso, cordenando essas margin de forma precis
     text-align: center;
     padding: 1em;
 }
+
+.rodape__link:hover {
+    color: var(--botao);
+}
