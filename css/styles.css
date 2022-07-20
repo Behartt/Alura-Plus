@@ -131,3 +131,31 @@ as class se tornam relevantes para isso, cordenando essas margin de forma precis
     font-size: 32px;
     font-weight: 700;
 }
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    margin-top: 6em;
+    margin-bottom: 1em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    list-style-type: none;
+}
+
+.rodape__link {
+    color: var(--destaque);
+    text-decoration: none;
+}
+
+.rodape__texto {
+    color: var(--secundario);
+    font-size: 14px;
+    text-align: center;
+    padding: 1em;
+}
