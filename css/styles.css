@@ -107,3 +107,27 @@ as class se tornam relevantes para isso, cordenando essas margin de forma precis
     color: var(--secundario);
     margin-bottom: 1em;
 }
+
+.dispositivos {
+    text-align: center;
+    
+}
+
+.dispositivos__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.dispositivos__titulo {
+    color: var(--destaque);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivos__texto {
+    color: var(--destaque);
+    font-size: 32px;
+    font-weight: 700;
+}
