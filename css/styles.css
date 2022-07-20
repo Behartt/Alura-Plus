@@ -24,7 +24,6 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
-
 }
 
 .principal {
@@ -34,12 +33,27 @@ body {
     por isso as caracteristicas abaixo se fazem nessesarias*/
     background-repeat: no-repeat;
     background-size: contain;
+    /*Como um grid-column foi definido para essa secao, o align-items centraliza os itens nessa coluna */
+    align-items: center;
+    text-align: center;
+}
+
+/*De acordo com o figma os elementos tem certos espaçamentos entre si, para continuar 
+com meu design seguindo o deles, margin precisam ser adicionadas em diversos elementos, 
+as class se tornam relevantes para isso, cordenando essas margin de forma precisa. */
+
+.principal__caixa {
+    margin: 0 6em;
 }
 
 .principal__titulo {
     color: var(--destaque);
     font-size: 28px;
     font-weight: 700;
+}
+
+.principal__imagem {
+    margin: 1em 2em;
 }
 
 .principal__botao {
@@ -51,6 +65,8 @@ body {
     padding: 1em;
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
+    text-align: center
 }
 
 .principal__botao-secundario {
@@ -58,7 +74,36 @@ body {
     border: 1px solid var(--destaque);
 }
 
+.secao__botao {
+    display: inline-block;
+}
+
 .principal__texto {
     color: var(--secundario);
     font-size: 12px;
+}
+
+.secao {
+    align-items: center;
+    margin: 0 6em;
+}
+
+.secao__caixa {
+    padding: 2em;
+}
+
+.secao__imagem {
+    width: 80%;
+}
+
+.secao__titulo {
+    color: var(--destaque);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+.secao__texto {
+    color: var(--secundario);
+    margin-bottom: 1em;
 }
